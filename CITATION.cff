@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: CHILDHEART ECG machine learning
+message: If you use this code, please cite the article below.
+type: software
+authors:
+  - family-names: de Alencar Neto
+    given-names: José Nunes
+    affiliation: Instituto Dante Pazzanese de Cardiologia, São Paulo, Brazil
+license: MIT
+repository-code: https://github.com/josenalencar/childheart-ecg-ml
+preferred-citation:
+  type: article
+  title: >-
+    Machine Learning Detects Pediatric Structural Heart Disease From the 12-Lead
+    Electrocardiogram: External Validation in 10,352 Children
+  authors:
+    - family-names: de Alencar Neto
+      given-names: José Nunes
+  journal: Pediatric Cardiology
+  year: 2026
+  status: submitted

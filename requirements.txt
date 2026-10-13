@@ -1,0 +1,11 @@
+# Pinned to the minor versions the published analyses were run on (Python 3.13, macOS arm64).
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+xgboost>=3.4
+lightgbm>=4.7
+shap>=0.46
+statsmodels>=0.14
+joblib>=1.4
+openpyxl>=3.1
+matplotlib>=3.9
