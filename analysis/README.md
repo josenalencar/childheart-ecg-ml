@@ -17,9 +17,15 @@ external feature table, and writes to `out/<topic>/`. Nothing is written back in
 | `08_external_calibration_dca.py` | calibration internally and externally; decision curves |
 | `10_manifesting_three_estimators.py` | ECG-manifesting lesion subanalysis for all three estimators |
 | `11_lightgbm_primary.py` | **the primary-model analyses**: operating characteristics, subgroups, split lottery, calibration, SHAP, stability, parsimony floor, decision curves, transportable-feature retrain |
+| `12_age_strata.py` | discrimination under and over three years of age, internally and externally |
+| `13_imputation_sensitivity.py` | the amount and pattern of missing data, and discrimination with missing values median-imputed against passed to LightGBM and XGBoost unimputed |
 
 `02` and `03` are retained as published because they document the random-forest comparator;
 their LightGBM equivalents, which the paper reports, are in `11`.
+
+`13` is the only script that rebuilds the feature matrix before imputation, so it needs the raw
+extraction as well as the modelling dataset: set `CHILDHEART_STUDY` to the directory holding
+`Data/` and `code/` if it is not the parent of `analysis/`.
 
 ## Shared modules
 
